@@ -1,0 +1,15 @@
+[phases.setup]
+cmds = [
+  "apt-get update",
+  "apt-get install -y curl libpng-dev libonig-dev libxml2-dev zip unzip",
+  "apt-get install -y default-mysql-client"
+]
+
+[phases.install]
+cmds = ["composer install --no-dev --optimize-autoloader"]
+
+[phases.build]
+cmds = ["npm install", "npm run build"]
+
+[start]
+cmd = "php artisan serve --host=0.0.0.0 --port=${PORT}"
