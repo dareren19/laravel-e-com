@@ -45,7 +45,6 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DB_URL'),
             'host' => env('DB_HOST'),
             'port' => env('DB_PORT', 4000),
             'database' => env('DB_DATABASE'),
@@ -79,8 +78,10 @@ return [
             'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
-                (PHP_VERSION_ID >= 80500 ? \Pdo\Mysql::ATTR_SSL_CA : \PDO::MYSQL_ATTR_SSL_CA) => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
+    defined('PDO::MYSQL_ATTR_SSL_CA') 
+        ? \PDO::MYSQL_ATTR_SSL_CA 
+        : (\Pdo\Mysql\Driver::ATTR_SSL_CA ?? null) => env('MYSQL_ATTR_SSL_CA'),
+]) : [],
         ],
 
         'pgsql' => [

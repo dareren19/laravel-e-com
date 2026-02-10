@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Concerns;
 
 use App\Models\Product;
 
-trait handlesCart{
+trait HandlesCart{
     protected function getCartWithProducts(array $cart) : array{
         if(empty($cart)){
             return [];

@@ -6,13 +6,13 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 
-use App\Http\Controllers\Concerns\handlesCart;
+use App\Http\Controllers\Concerns\HandlesCart;
 use Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsRedirected;
 
 class CartController extends Controller
 {
     
-    use handlesCart;
+    use HandlesCart;
     public function index() {
         $cart = $this->getCart();
         $cartItems = $this->getCartWithProducts($cart);

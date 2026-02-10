@@ -17,14 +17,14 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\RedirectResponse;
 
-use App\Http\Controllers\Concerns\handlesCart;
+use App\Http\Controllers\Concerns\HandlesCart;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 
 
 class CheckoutController extends Controller
 {
-    use handlesCart;
+    use HandlesCart;
     public function __construct(private HitPayService $hitPayService ){
 
     }
