@@ -17,14 +17,14 @@ class ProductSeeder extends Seeder
          $products = [
             [
                 'name' => 'Sakura',
-                'description' => '5x7 Tri-Fold design invitation cart cover..',
+                'description' => '5x7 Tri-Fold design invitation cart cover.',
                 'price' => 50.00,
                 'image' => 'https://m.media-amazon.com/images/I/71XY1bN+ycL.jpg',
                 'category' => 'Christening',
                 'brand' => 'Tri-Fold',
                 'stock' => 50,
                 'is_featured' => true,
-                'is_new' => true,
+                'is_new' => false,
             ],
             [
                 'name' => 'Floral',
@@ -45,7 +45,7 @@ class ProductSeeder extends Seeder
                 'category' => 'Wedding',
                 'brand' => 'Gate-Fold',
                 'stock' => 20,
-                'is_featured' => true,
+                'is_featured' => false,
                 'is_new' => true,
             ],
             [
@@ -57,7 +57,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Gate-Fold',
                 'stock' => 50,
                 'is_featured' => false,
-                'is_new' => false,
+                'is_new' => true,
             ],
             [
                 'name' => 'Bloosom',
@@ -67,7 +67,7 @@ class ProductSeeder extends Seeder
                 'category' => 'Chirstening',
                 'brand' => 'Sliding',
                 'stock' => 25,
-                'is_featured' => true,
+                'is_featured' => false,
                 'is_new' => true,
             ],
             [
@@ -90,7 +90,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Gate-Fold',
                 'stock' => 30,
                 'is_featured' => false,
-                'is_new' => false,
+                'is_new' => true,
             ],
             [
                 'name' => 'Heart',
@@ -123,7 +123,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Gate-Fold',
                 'stock' => 15,
                 'is_featured' => true,
-                'is_new' => true,
+                'is_new' => false,
             ],
              [
                 'name' => 'Broadleaf',
@@ -134,7 +134,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Tri-Fold',
                 'stock' => 25,
                 'is_featured' => true,
-                'is_new' => true,
+                'is_new' => false,
             ],
             [
                 'name' => 'Butterfly',
@@ -144,7 +144,7 @@ class ProductSeeder extends Seeder
                 'category' => 'Wedding',
                 'brand' => 'Gate-Fold',
                 'stock' => 75,
-                'is_featured' => true,
+                'is_featured' => false,
                 'is_new' => true,
             ],
             [
@@ -155,7 +155,7 @@ class ProductSeeder extends Seeder
                 'category' => 'Wedding',
                 'brand' => 'Gate-Fold',
                 'stock' => 60,
-                'is_featured' => true,
+                'is_featured' => false,
                 'is_new' => true,
             ],
             [
@@ -167,7 +167,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Tri-Fold',
                 'stock' => 60,
                 'is_featured' => true,
-                'is_new' => true,
+                'is_new' => false,
             ],
         ];
 
